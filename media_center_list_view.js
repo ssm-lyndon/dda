@@ -1,5 +1,3 @@
-/* last revised: 2016-07-15 */
-javascript:
 function newButton(e, t) {
   var n = document.createElement("a");
   n.innerHTML = e;
@@ -26,9 +24,8 @@ function doIt() {
       parent.appendChild(new newButton("Appearance", link.replace(/Action=details/gi, "Action=appearance")));
       parent.appendChild(new newButton("Copy", link.replace(/Action=details/gi, "Action=copyprefs")));
       parent.appendChild(new newButton("Data", link.replace(/Action=details/gi, "Action=dataprefs")));
-      parent.appendChild(new newButton("Tear sheets", link.replace(/Action=details/gi, "Action=tearsheetprefs")));
+      parent.appendChild(new newButton("Conversions", link.replace(/Action=details/gi, "Action=conversions")));
       parent.appendChild(new newButton("Preview", link.replace(/Action=details/gi, "Action=preview")));
     };
   }
 };
-doIt();
