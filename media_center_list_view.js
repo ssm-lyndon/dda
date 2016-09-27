@@ -1,7 +1,7 @@
 const scriptVersion = '2.0';
 let updateMessage = ''
 
-updateMessage += 'Media Center List View Helper version 2.0 installed.\n\n';
+updateMessage += 'Media Center List View Helper upgraded to version 2.0\n\n';
 updateMessage += 'Changes:\n';
 updateMessage += '===========\n';
 updateMessage += '+ Removed Tear Sheets button (which has been defunct for awhile)\n';
