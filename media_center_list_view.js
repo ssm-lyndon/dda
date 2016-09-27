@@ -1,3 +1,4 @@
+alert('create buttons');
 function newButton(e, t) {
   var n = document.createElement("a");
   n.innerHTML = e;
