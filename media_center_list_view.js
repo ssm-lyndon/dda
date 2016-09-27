@@ -1,4 +1,3 @@
-alert('create buttons');
 function newButton(e, t) {
   var n = document.createElement("a");
   n.innerHTML = e;
@@ -11,22 +10,21 @@ function newButton(e, t) {
   n.style.padding = "2px";
   return n;
 };
-function doIt() {
-  var buttons = document.getElementsByClassName("step_save_small");
-  for (var i = 0; i < buttons.length; i++) {
-    var button = buttons[i],
-      parent = button.parentNode;
-    if (button.getAttribute("value") == "Edit") {
-      var link = buttons[i].getAttribute("onclick");
-      link = link.replace(/document.location.href='/gi, "");
-      link = link.replace(/';/gi, "");
-      parent.innerHTML = "";
-      parent.appendChild(new newButton("Details", link.replace(/Action=details/gi, "Action=details")));
-      parent.appendChild(new newButton("Appearance", link.replace(/Action=details/gi, "Action=appearance")));
-      parent.appendChild(new newButton("Copy", link.replace(/Action=details/gi, "Action=copyprefs")));
-      parent.appendChild(new newButton("Data", link.replace(/Action=details/gi, "Action=dataprefs")));
-      parent.appendChild(new newButton("Conversions", link.replace(/Action=details/gi, "Action=conversions")));
-      parent.appendChild(new newButton("Preview", link.replace(/Action=details/gi, "Action=preview")));
-    };
-  }
+
+var buttons = document.getElementsByClassName("step_save_small");
+for (var i = 0; i < buttons.length; i++) {
+  var button = buttons[i],
+    parent = button.parentNode;
+  if (button.getAttribute("value") == "Edit") {
+    var link = buttons[i].getAttribute("onclick");
+    link = link.replace(/document.location.href='/gi, "");
+    link = link.replace(/';/gi, "");
+    parent.innerHTML = "";
+    parent.appendChild(new newButton("Details", link.replace(/Action=details/gi, "Action=details")));
+    parent.appendChild(new newButton("Appearance", link.replace(/Action=details/gi, "Action=appearance")));
+    parent.appendChild(new newButton("Copy", link.replace(/Action=details/gi, "Action=copyprefs")));
+    parent.appendChild(new newButton("Data", link.replace(/Action=details/gi, "Action=dataprefs")));
+    parent.appendChild(new newButton("Conversions", link.replace(/Action=details/gi, "Action=conversions")));
+    parent.appendChild(new newButton("Preview", link.replace(/Action=details/gi, "Action=preview")));
+  };
 };
