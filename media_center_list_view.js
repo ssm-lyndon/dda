@@ -20,7 +20,7 @@ function doIt() {
       link = link.replace(/document.location.href='/gi, "");
       link = link.replace(/';/gi, "");
       parent.innerHTML = "";
-      parent.appendChild(new newButton("Edit", link.replace(/Action=details/gi, "Action=details")));
+      parent.appendChild(new newButton("Details", link.replace(/Action=details/gi, "Action=details")));
       parent.appendChild(new newButton("Appearance", link.replace(/Action=details/gi, "Action=appearance")));
       parent.appendChild(new newButton("Copy", link.replace(/Action=details/gi, "Action=copyprefs")));
       parent.appendChild(new newButton("Data", link.replace(/Action=details/gi, "Action=dataprefs")));
