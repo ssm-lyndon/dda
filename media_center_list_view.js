@@ -2,10 +2,10 @@ const scriptVersion = '2.0';
 let updateMessage = ''
 
 updateMessage += 'Media Center List View Helper version 2.0 installed.\n\n';
-updateMessage += 'Changes:\n\n';
-updateMessage += '======================';
-updateMessage += '+ Removed Tear Sheets button (which has been defunct for awhile)';
-updateMessage += '+ Added button to go directly to the Conversions step';
+updateMessage += 'Changes:\n';
+updateMessage += '===========\n';
+updateMessage += '+ Removed Tear Sheets button (which has been defunct for awhile)\n';
+updateMessage += '+ Added button to go directly to the Conversions step\n';
 updateMessage += '+ Added auto-updates functionality';
 
 /* check script version; alert the user if there have been updates since they last used this */
