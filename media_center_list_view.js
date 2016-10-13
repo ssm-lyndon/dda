@@ -12,7 +12,7 @@ updateMessage += '+ Added auto-updates functionality';
 $.getScript('https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js')
   .done(function(script, textStatus) {
     if (Cookies.get('media_center_list_view_scriptVersion') !== scriptVersion) {
-      alert(updateMessage);
+      console.log(updateMessage);
 
       Cookies.set('media_center_list_view_scriptVersion', scriptVersion, 365);
     }
